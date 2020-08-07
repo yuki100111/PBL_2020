@@ -1,0 +1,149 @@
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+#logo {
+  padding-left: 10px !important;
+}
+
+#model_header_wrp {
+  display: none !important;
+}
+
+header {
+  background-color: rgba(0,0,0,0);
+}
+
+#head_container {
+  width: 1200px;
+}
+
+#model_explain {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+#model_explain_heading, .program_container h1 {
+  padding: 50px 0 40px;
+  font-size: 24px;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  font-family: 'Noto sans JP', sans-serif;
+}
+
+#model_explain p, .program_container p {
+  font-family: 'Noto sans JP', sans-serif;
+  color: #111;
+  text-align: left;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  font-weight: 300;
+  line-height: 30px;
+  padding: 20px 0;
+}
+
+.program_container {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  overflow: scroll;
+  background-attachment: fixed;
+}
+
+.program_container > div > p {
+  text-align: left;
+}
+
+#art_museum {
+  background-image: url('../img/art_museum_bg.jpg');
+}
+
+#natural_museum {
+  background-image: url('../img/natural_museum_bg.jpg');
+}
+
+#city_hall {
+  background-image: url('../img/city_hall_bg.jpg');
+}
+
+#stephen {
+  background-image: url('../img/stephen_bg.jpg');
+}
+
+#opera {
+  background-image: url('../img/opera_bg.jpg');
+}
+
+#natural_museum h1, #natural_museum p, #stephen h1, #stephen p {
+  color: white;
+}
+
+section h1 {
+  font-weight: 400 !important;
+}
+
+
+/* small screen */
+#model_explain {
+  width: 95%;
+}
+
+#model_explain p, .program_container {
+    padding: 12px 0;
+}
+
+.program_container > div {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+/* medium screen */
+@media (min-width: 560px) {
+  video{
+    width: 200px;
+  }
+}
+
+/* large screen */
+@media (min-width: 960px) {
+  #model_explain {
+    width: 850px;
+    padding-bottom: 100px;
+  }
+
+  #model_explain_heading, .program_container h1 {
+    padding: 100px 0 100px;
+    font-size: 32px;
+    letter-spacing: 6px;
+    font-weight: 200;
+    font-family: 'Noto sans JP', sans-serif;
+  }
+
+  #model_explain p, .program_container p {
+    padding: 10px 0;
+    line-height: 40px;
+  }
+
+  .program_container > div {
+    width: 850px;
+    margin: 0 auto;
+  }
+  video{
+    width: 700px;
+  }
+}
+
+/* スマホ用 */
+@media screen and (max-width: 560px) {
+  video{
+    width: 200px;
+  }
+}

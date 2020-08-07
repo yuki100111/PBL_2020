@@ -1,0 +1,231 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+ul li {
+  text-indent: 1em !important;
+}
+
+#home_first, #home_details {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+#home_details {
+  background-size: cover;
+  background-position: center;
+  overflow: scroll;
+}
+
+
+#home_first_heading {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+#home_details_heading {
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#home_first_txt {
+  font-weight: 400;
+}
+
+#home_first_heading, #home_first_txt,
+#home_details p,#home_details li, #program_heading  {
+  opacity: 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  font-family: 'Noto sans JP', sans-serif;
+  color: #111;
+}
+
+#home_program, #program_wrp {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.appear {
+  opacity: 1 !important;
+}
+
+
+/* small screen */
+#home_first_heading {
+  padding-top: 45vh;
+  letter-spacing: 1px;
+}
+
+#home_first_txt {
+  font-size: 15px;
+  padding-top: 10px;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+#home_details_heading, #program_heading {
+  padding: 50px 0 40px;
+  font-size: 24px;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  font-family: 'Noto sans JP', sans-serif;
+}
+
+#home_details p {
+  padding: 30px 0;
+}
+
+#home_details p,
+#home_details li {
+  text-align: left;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  font-weight: 300;
+  line-height: 34px;
+}
+
+#home_details li {
+  list-style-type: circle;
+  list-style-position: inside;
+  text-indent: -1em !important;
+  padding-left: 1em;
+}
+
+#home_details_wrp {
+  width: 95%;
+  margin: 0 auto;
+}
+
+#pc_details_txt {
+  display: none;
+}
+
+#mobile_details_txt {
+  display: block;
+}
+
+.box {
+  opacity: 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  width: 200px;
+  height: 60px;
+  margin: 20px auto;
+  line-height: 60px;
+  background-color: #ddd;
+  border-top: 1 solid #222;
+  border-bottom: 1 solid #222;
+}
+
+.box {
+  font-family: "Noto sans JP", sans-serif;
+  font-weight: 300;
+}
+
+.box > a {
+  font-family: "Noto sans JP", sans-serif;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: 300;
+}
+
+.box > a:hover {
+  opacity: 0.6;
+}
+
+/* medium screen */
+@media (min-width: 560px) {
+  #pc_details_txt {
+    display: block;
+  }
+
+  #mobile_details_txt {
+    display: none;
+  }
+}
+
+/* large screen */
+@media (min-width: 960px) {
+  #home_details_wrp {
+    width: 850px;
+    margin: 0 auto;
+  }
+
+  #home_first_heading {
+    padding-top: 45vh;
+    padding-bottom: 25px;
+    font-size: 44px;
+    letter-spacing: 2px;
+  }
+
+  #home_first_txt {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  #home_details_heading, #program_heading {
+    padding: 100px 0 100px;
+    font-size: 38px;
+    letter-spacing: 6px;
+    font-weight: 200;
+    font-family: 'Noto sans JP', sans-serif;
+  }
+
+  #home_details p{
+    padding: 20px 0;
+  }
+
+  #home_details p,
+  #home_details li {
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    line-height: 30px;
+  }
+
+  #pc_details_txt {
+    display: block;
+  }
+
+  #mobile_details_txt {
+    display: none;
+  }
+
+  #program_wrp {
+    width: 850px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 100px;
+  }
+
+  .box {
+    width: 250px;
+    height: 250px;
+    background: #ddd;
+    line-height: 250px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: lighter;
+    border: none;
+  }
+
+  .box > a {
+    display: block;
+  }
+
+}
